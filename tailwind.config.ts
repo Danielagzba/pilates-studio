@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
-const config: Config = {
+const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -10,21 +10,18 @@ const config: Config = {
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
+      fontFamily: {
+        serif: ["var(--font-serif)", "serif"],
+      },
       colors: {
-        pilates: {
-          50: "#f9f6f2",
-          100: "#EFE5D9", // Our main pilates color
-          200: "#e5d6c4",
-          300: "#d2b99d",
-          400: "#c09c76",
-          500: "#b3865b", // Darker shade for hover states
-          600: "#a47551",
-          700: "#8a6046",
-          800: "#704e3c",
-          900: "#5c4235",
-          950: "#302119",
-        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -81,6 +78,7 @@ const config: Config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-};
+} satisfies Config
 
-export default config;
+export default config
+
