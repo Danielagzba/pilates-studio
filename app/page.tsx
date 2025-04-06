@@ -1,7 +1,7 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
-            alt="Pilates studio"
+            src="/pilatesgirl.jpg"
+            alt="Talasofilia studio"
             fill
             className="object-cover opacity-90"
             priority
@@ -22,11 +22,12 @@ export default function Home() {
         <div className="container relative z-10 px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center text-white">
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6">
-              Discover Your <span className="font-medium italic">Strength</span> Within
+              Discover Your <span className="font-medium italic">Strength</span>{" "}
+              Within
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8 max-w-xl mx-auto">
-              A modern Pilates experience in the heart of Mexico City, focused on mindful movement and personal
-              transformation.
+              A modern Pilates experience in the heart of Puerto Escondido,
+              focused on mindful movement and personal transformation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="rounded-none px-8">
@@ -60,13 +61,14 @@ export default function Home() {
                 Our <span className="font-medium italic">Philosophy</span>
               </h2>
               <p className="text-muted-foreground mb-6">
-                At Estudio Pilates, we believe in the transformative power of mindful movement. Our approach combines
-                traditional Pilates principles with modern techniques to create a unique experience that strengthens
-                both body and mind.
+                At Talasofilia Pilates, we believe in the transformative power
+                of mindful movement. Our approach combines traditional Pilates
+                principles with modern techniques to create a unique experience
+                that strengthens both body and mind.
               </p>
               <p className="text-muted-foreground mb-8">
-                Founded in 2018, our studio has become a sanctuary for those seeking balance, strength, and wellness in
-                their busy lives.
+                Founded in 2018, our studio has become a sanctuary for those
+                seeking balance, strength, and wellness in their busy lives.
               </p>
               <Button asChild variant="outline" className="rounded-none">
                 <Link href="/about" className="group">
@@ -76,7 +78,12 @@ export default function Home() {
               </Button>
             </div>
             <div className="relative h-[400px] md:h-[500px]">
-              <Image src="/placeholder.svg?height=800&width=600" alt="Pilates practice" fill className="object-cover" />
+              <Image
+                src="/one.jpg"
+                alt="Pilates practice"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -90,7 +97,8 @@ export default function Home() {
               Our <span className="font-medium italic">Classes</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Discover our specialized Pilates classes designed to transform your body and mind.
+              Discover our specialized Pilates classes designed to transform
+              your body and mind.
             </p>
           </div>
 
@@ -107,9 +115,14 @@ export default function Home() {
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="font-serif text-xl font-medium mb-2">{cls.title}</h3>
+                  <h3 className="font-serif text-xl font-medium mb-2">
+                    {cls.title}
+                  </h3>
                   <p className="text-sm opacity-90 mb-4">{cls.description}</p>
-                  <Link href={`/classes/${cls.id}`} className="inline-flex items-center text-sm font-medium">
+                  <Link
+                    href={`/classes/${cls.id}`}
+                    className="inline-flex items-center text-sm font-medium"
+                  >
                     Learn More
                     <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
@@ -134,26 +147,34 @@ export default function Home() {
               Meet Your <span className="font-medium italic">Instructor</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Dedicated to guiding you on your wellness journey through the art of Pilates.
+              Dedicated to guiding you on your wellness journey through the art
+              of Pilates.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/maria.png"
                 alt="Maria Rodriguez"
                 fill
                 className="object-cover object-top"
               />
             </div>
             <div>
-              <h3 className="font-serif text-2xl font-medium mb-2">Maria Rodriguez</h3>
-              <p className="text-sm text-muted-foreground mb-4">Founder & Lead Instructor</p>
+              <h3 className="font-serif text-2xl font-medium mb-2">
+                Maria Rodriguez
+              </h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Founder & Lead Instructor
+              </p>
               <p className="text-muted-foreground mb-6">
-                Maria discovered Pilates during her career as a professional dancer and was immediately drawn to its
-                precise, mindful approach to movement. After completing her comprehensive certification in New York, she
-                taught at prestigious studios in the US and UK before returning to Mexico to found Estudio Pilates.
+                Maria discovered Pilates during her career as a professional
+                dancer and was immediately drawn to its precise, mindful
+                approach to movement. After completing her comprehensive
+                certification in New York, she taught at prestigious studios in
+                the US and UK before returning to Mexico to found Estudio
+                Pilates.
               </p>
               <Button asChild variant="outline" className="rounded-none">
                 <Link href="/about" className="group">
@@ -174,7 +195,8 @@ export default function Home() {
               Our <span className="font-medium italic">Studio</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Take a peek inside our tranquil space designed for focus, movement, and transformation.
+              Take a peek inside our tranquil space designed for focus,
+              movement, and transformation.
             </p>
           </div>
 
@@ -186,7 +208,12 @@ export default function Home() {
                   index === 0 || index === 3 ? "col-span-2 row-span-2" : ""
                 } h-[200px] md:h-[250px]`}
               >
-                <Image src={image || "/placeholder.svg"} alt="Studio gallery" fill className="object-cover" />
+                <Image
+                  src={image || "/placeholder.svg"}
+                  alt="Studio gallery"
+                  fill
+                  className="object-cover"
+                />
               </div>
             ))}
           </div>
@@ -207,7 +234,8 @@ export default function Home() {
               Client <span className="font-medium italic">Testimonials</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Hear from our community about their experiences and transformations.
+              Hear from our community about their experiences and
+              transformations.
             </p>
           </div>
 
@@ -225,10 +253,14 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-medium">{testimonial.name}</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.type}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.type}
+                    </p>
                   </div>
                 </div>
-                <p className="italic text-muted-foreground">{testimonial.quote}</p>
+                <p className="italic text-muted-foreground">
+                  {testimonial.quote}
+                </p>
               </div>
             ))}
           </div>
@@ -240,10 +272,12 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-light mb-6">
-              Begin Your <span className="font-medium italic">Journey</span> Today
+              Begin Your <span className="font-medium italic">Journey</span>{" "}
+              Today
             </h2>
             <p className="text-lg opacity-80 mb-8">
-              Take the first step toward a stronger, more balanced you. Join us for a class or contact us to learn more.
+              Take the first step toward a stronger, more balanced you. Join us
+              for a class or contact us to learn more.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="rounded-none px-8">
@@ -262,7 +296,7 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
 // Sample data
@@ -270,18 +304,20 @@ const classes = [
   {
     id: "morning-flow",
     title: "Morning Flow",
-    description: "Start your day with energizing Pilates exercises that awaken your body and mind.",
-    image: "/placeholder.svg?height=600&width=400",
+    description:
+      "Start your day with energizing Pilates exercises that awaken your body and mind.",
+    image: "/ball.jpg",
     time: "7:30 AM",
   },
   {
     id: "evening-restore",
     title: "Evening Restore",
-    description: "Unwind and release tension with restorative movements that promote relaxation and recovery.",
-    image: "/placeholder.svg?height=600&width=400",
+    description:
+      "Unwind and release tension with restorative movements that promote relaxation and recovery.",
+    image: "/five.png",
     time: "6:00 PM",
   },
-]
+];
 
 const galleryImages = [
   "/placeholder.svg?height=600&width=800",
@@ -292,7 +328,7 @@ const galleryImages = [
   "/placeholder.svg?height=400&width=400",
   "/placeholder.svg?height=400&width=400",
   "/placeholder.svg?height=400&width=400",
-]
+];
 
 const testimonials = [
   {
@@ -316,5 +352,4 @@ const testimonials = [
     quote:
       "As someone new to Pilates, I was nervous about joining a class. Maria made me feel comfortable from day one and I've seen amazing progress.",
   },
-]
-
+];

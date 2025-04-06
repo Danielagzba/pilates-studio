@@ -13,7 +13,7 @@ export function SiteHeader() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="font-serif text-xl md:text-2xl font-light">
-          Estudio <span className="font-medium italic">Pilates</span>
+          Talasofilia <span className="font-medium italic">Pilates</span>
         </Link>
 
         {isMobile ? (

@@ -5,8 +5,8 @@ import { Textarea } from "@/components/ui/textarea"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export const metadata = {
-  title: "Contact Us | Estudio Pilates",
-  description: "Get in touch with Estudio Pilates in Mexico City. Contact information and inquiry form.",
+  title: "Contact Us | Talasofilia Pilates",
+  description: "Get in touch with Estudio Pilates in Puerto Escondido. Contact information and inquiry form.",
 }
 
 export default function ContactPage() {
@@ -27,9 +27,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium mb-1">Visit Us</h3>
                     <p className="text-sm text-muted-foreground">
-                      Calle Durango 216<br />
-                      Roma Norte, 06700<br />
-                      Ciudad de México, CDMX
+                    Bugambilias 3<br />
+                    Colonia Santa Maria, Puerto Escondido<br />
+                    Oaxaca 70934
                     </p>
                   </div>
                 </div>

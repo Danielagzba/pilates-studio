@@ -17,9 +17,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Estudio Pilates | Modern Pilates Studio in Mexico City",
+  title: "Talasofilia Pilates | Modern Pilates Studio in Puerto Escondido",
   description:
-    "A modern Pilates experience in the heart of Mexico City, focused on mindful movement and personal transformation.",
+    "A modern Pilates experience in the heart of Puerto Escondido, focused on mindful movement and personal transformation.",
 };
 
 export default function RootLayout({
