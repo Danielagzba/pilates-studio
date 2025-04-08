@@ -62,10 +62,10 @@ export function SiteHeader() {
               Classes
             </Link>
             <Link
-              href="/gallery"
+              href="/pricing"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
-              Gallery
+              Pricing
             </Link>
             <Link
               href="/contact"
