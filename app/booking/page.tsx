@@ -1,14 +1,27 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export const metadata = {
   title: "Book a Class | Estudio Pilates",
   description: "Book your Pilates class at our studio in Mexico City.",
-}
+};
 
 export default function BookingPage() {
   return (
@@ -21,7 +34,8 @@ export default function BookingPage() {
                 Book a <span className="font-medium italic">Class</span>
               </h1>
               <p className="text-muted-foreground">
-                Reserve your spot in one of our classes or request information about private sessions.
+                Reserve your spot in one of our classes or request information
+                about private sessions.
               </p>
             </div>
 
@@ -29,7 +43,8 @@ export default function BookingPage() {
               <CardHeader>
                 <CardTitle>Class Booking</CardTitle>
                 <CardDescription>
-                  Fill out the form below to book your class. We'll confirm your reservation via email.
+                  Fill out the form below to book your class. We'll confirm your
+                  reservation via email.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -37,22 +52,36 @@ export default function BookingPage() {
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="first-name">First Name</Label>
-                      <Input id="first-name" placeholder="Enter your first name" />
+                      <Input
+                        id="first-name"
+                        placeholder="Enter your first name"
+                      />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="last-name">Last Name</Label>
-                      <Input id="last-name" placeholder="Enter your last name" />
+                      <Input
+                        id="last-name"
+                        placeholder="Enter your last name"
+                      />
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="Enter your email" />
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email"
+                    />
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" type="tel" placeholder="Enter your phone number" />
+                    <Input
+                      id="phone"
+                      type="tel"
+                      placeholder="Enter your phone number"
+                    />
                   </div>
 
                   <div className="grid gap-4 sm:grid-cols-2">
@@ -63,9 +92,15 @@ export default function BookingPage() {
                           <SelectValue placeholder="Select class type" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="morning-flow">Morning Flow (7:30 AM)</SelectItem>
-                          <SelectItem value="evening-restore">Evening Restore (6:00 PM)</SelectItem>
-                          <SelectItem value="private">Private Session</SelectItem>
+                          <SelectItem value="morning-flow">
+                            Morning (8:30 AM)
+                          </SelectItem>
+                          <SelectItem value="evening-restore">
+                            Morning (9:30 AM)
+                          </SelectItem>
+                          <SelectItem value="private">
+                            Evening (5:00 PM)
+                          </SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -83,7 +118,9 @@ export default function BookingPage() {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="beginner">Beginner</SelectItem>
-                        <SelectItem value="intermediate">Intermediate</SelectItem>
+                        <SelectItem value="intermediate">
+                          Intermediate
+                        </SelectItem>
                         <SelectItem value="advanced">Advanced</SelectItem>
                       </SelectContent>
                     </Select>
@@ -105,10 +142,12 @@ export default function BookingPage() {
             </Card>
 
             <div className="mt-12 text-center">
-              <h2 className="font-serif text-xl md:text-2xl font-light mb-4">Need More Information?</h2>
+              <h2 className="font-serif text-xl md:text-2xl font-light mb-4">
+                Need More Information?
+              </h2>
               <p className="text-muted-foreground mb-6">
-                If you have questions about our classes or would like to discuss private sessions, please don't hesitate
-                to contact us.
+                If you have questions about our classes or would like to discuss
+                private sessions, please don't hesitate to contact us.
               </p>
               <Button variant="outline" className="rounded-none">
                 Contact Us
@@ -118,6 +157,5 @@ export default function BookingPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
-

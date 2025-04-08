@@ -24,7 +24,7 @@ export default function PricingPage() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/pricing.jpg"
             alt="Pilates studio"
             fill
             className="object-cover opacity-90"
@@ -58,7 +58,7 @@ export default function PricingPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-1 gap-8 max-w-xl mx-auto">
             {singleClasses.map((item, index) => (
               <Card key={index} className="border-0 shadow-md">
                 <CardHeader>
@@ -100,12 +100,11 @@ export default function PricingPage() {
               Class <span className="font-medium italic">Packages</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Save with our multi-class packages. All packages are valid for 3
-              months from purchase.
+              Save with our multi-class packages.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {classPackages.map((pkg, index) => (
               <Card
                 key={index}
@@ -113,16 +112,10 @@ export default function PricingPage() {
                   pkg.popular ? "ring-2 ring-stone-900" : ""
                 }`}
               >
-                {pkg.popular && (
-                  <div className="bg-stone-900 text-white text-xs font-medium py-1 px-3 absolute top-0 right-0">
-                    Most Popular
-                  </div>
-                )}
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl font-light">
                     {pkg.name}
                   </CardTitle>
-                  <CardDescription>{pkg.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-baseline mb-4">
@@ -158,50 +151,6 @@ export default function PricingPage() {
       </section>
 
       {/* Private Sessions */}
-      <section className="py-20 md:py-32">
-        <div className="container px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-light mb-4">
-              Private <span className="font-medium italic">Sessions</span>
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              One-on-one instruction tailored to your specific needs and goals.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {privateSessions.map((session, index) => (
-              <Card key={index} className="border-0 shadow-md">
-                <CardHeader>
-                  <CardTitle className="font-serif text-2xl font-light">
-                    {session.name}
-                  </CardTitle>
-                  <CardDescription>{session.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-baseline mb-4">
-                    <span className="text-3xl font-bold">{session.price}</span>
-                    <span className="text-muted-foreground ml-1">MXN</span>
-                  </div>
-                  <ul className="space-y-2">
-                    {session.features.map((feature, i) => (
-                      <li key={i} className="flex items-start">
-                        <Check className="h-5 w-5 mr-2 text-green-500 shrink-0" />
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button asChild className="w-full rounded-none">
-                    <Link href="/contact">Book Private Session</Link>
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="py-20 md:py-32">
@@ -271,60 +220,52 @@ const singleClasses = [
       "Equipment provided",
     ],
   },
-  {
-    name: "First-Time Trial",
-    description: "Special introductory rate for new clients",
-    price: "250",
-    features: [
-      "One-time offer for new clients",
-      "Access to any scheduled class",
-      "Personalized guidance from instructor",
-      "Equipment provided",
-    ],
-  },
 ];
 
 const classPackages = [
   {
-    name: "5-Class Pack",
-    description: "Perfect for occasional practitioners",
-    price: "1,600",
-    pricePerClass: "320",
-    popular: false,
-    features: [
-      "Valid for 3 months from purchase",
-      "Access to any scheduled class",
-      "Flexible scheduling",
-      "Equipment provided",
-    ],
-  },
-  {
-    name: "10-Class Pack",
-    description: "Our most popular package",
-    price: "2,800",
-    pricePerClass: "280",
-    popular: true,
-    features: [
-      "Valid for 3 months from purchase",
-      "Access to any scheduled class",
-      "Flexible scheduling",
-      "Equipment provided",
-      "Priority booking",
-    ],
-  },
-  {
-    name: "20-Class Pack",
-    description: "Best value for regular practitioners",
-    price: "5,000",
+    name: "4-Class Pack",
+    price: "1,000",
     pricePerClass: "250",
     popular: false,
     features: [
-      "Valid for 3 months from purchase",
       "Access to any scheduled class",
       "Flexible scheduling",
       "Equipment provided",
-      "Priority booking",
-      "One free private session",
+    ],
+  },
+  {
+    name: "6-Class Pack",
+    price: "1,500",
+    pricePerClass: "250",
+    popular: false,
+    features: [
+      "Access to any scheduled class",
+      "Flexible scheduling",
+      "Equipment provided",
+    ],
+  },
+  {
+    name: "8-Class Pack",
+    price: "2,000",
+    pricePerClass: "250",
+    popular: false,
+    features: [
+      "Access to any scheduled class",
+      "Flexible scheduling",
+      "Equipment provided",
+    ],
+  },
+  {
+    name: "12-Class Pack",
+
+    price: "3,000",
+    pricePerClass: "250",
+    popular: false,
+    features: [
+      "Access to any scheduled class",
+      "Flexible scheduling",
+      "Equipment provided",
     ],
   },
 ];
@@ -369,7 +310,7 @@ const pricingFaqs = [
   {
     question: "What is your cancellation policy?",
     answer:
-      "Classes must be cancelled at least 12 hours in advance to avoid being charged. For packages and memberships, the class will be deducted from your balance if cancelled within 12 hours.",
+      "Classes must be cancelled at least 24 hours in advance to avoid being charged.",
   },
   {
     question: "Is there a registration fee?",
@@ -379,11 +320,11 @@ const pricingFaqs = [
   {
     question: "Do you offer refunds?",
     answer:
-      "Class packages and memberships are non-refundable. In exceptional circumstances, please contact us to discuss your situation.",
+      "Class packages are non-refundable. In exceptional circumstances, please contact us to discuss your situation.",
   },
-  {
-    question: "How do I pay for classes?",
-    answer:
-      "We accept cash, credit/debit cards, and bank transfers. Payment is required at the time of booking or before the class begins.",
-  },
+  // {
+  //   question: "How do I pay for classes?",
+  //   answer:
+  //     "We accept cash, credit/debit cards, and bank transfers. Payment is required at the time of booking or before the class begins.",
+  // },
 ];

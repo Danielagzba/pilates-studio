@@ -25,15 +25,9 @@ export function SiteFooter() {
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
+
               <Link
-                href="https://facebook.com"
-                className="text-white hover:text-stone-300"
-              >
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link
-                href="mailto:info@estudiopilates.mx"
+                href="mailto:talasofiliapilates@gmail.com"
                 className="text-white hover:text-stone-300"
               >
                 <Mail className="h-5 w-5" />
@@ -58,10 +52,10 @@ export function SiteFooter() {
                 Classes
               </Link>
               <Link
-                href="/gallery"
+                href="/pricing"
                 className="text-sm text-stone-300 hover:text-white"
               >
-                Gallery
+                Pricing
               </Link>
               <Link
                 href="/contact"
@@ -89,11 +83,13 @@ export function SiteFooter() {
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-stone-400" />
-                <p className="text-sm text-stone-300">+52 55 1234 5678</p>
+                <p className="text-sm text-stone-300">++52 667 227 6817 </p>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-stone-400" />
-                <p className="text-sm text-stone-300">info@estudiopilates.mx</p>
+                <p className="text-sm text-stone-300">
+                  talasofiliapilates@gmail.com
+                </p>
               </div>
             </div>
           </div>
@@ -101,7 +97,7 @@ export function SiteFooter() {
 
         <div className="border-t border-stone-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-stone-400">
-            &copy; {new Date().getFullYear()} Estudio Pilates. All rights
+            &copy; {new Date().getFullYear()} Talasofilia Pilates. All rights
             reserved.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">

@@ -155,7 +155,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] overflow-hidden">
               <Image
-                src="/maria.png"
+                src="/maria.jpg"
                 alt="Maria Rodriguez"
                 fill
                 className="object-cover object-top"
@@ -187,47 +187,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Preview */}
-      <section className="py-20 md:py-32">
-        <div className="container px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-light mb-4">
-              Our <span className="font-medium italic">Studio</span>
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Take a peek inside our tranquil space designed for focus,
-              movement, and transformation.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {galleryImages.slice(0, 8).map((image, index) => (
-              <div
-                key={index}
-                className={`relative ${
-                  index === 0 || index === 3 ? "col-span-2 row-span-2" : ""
-                } h-[200px] md:h-[250px]`}
-              >
-                <Image
-                  src={image || "/placeholder.svg"}
-                  alt="Studio gallery"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild variant="outline" className="rounded-none px-8">
-              <Link href="/gallery">View Full Gallery</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
-      <section className="py-20 md:py-32 bg-stone-100">
+      <section className="py-20 md:py-32">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-light mb-4">
@@ -241,7 +202,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 shadow-sm">
+              <div key={index} className="bg-stone-100 p-8 shadow-sm">
                 <div className="flex items-center mb-4">
                   <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
                     <Image

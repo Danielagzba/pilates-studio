@@ -16,7 +16,7 @@ export default function AboutPage() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/beach.jpg"
             alt="Pilates studio"
             fill
             className="object-cover opacity-90"
@@ -44,7 +44,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] md:h-[500px]">
               <Image
-                src="ball2.jpg"
+                src="mat.jpg"
                 alt="Studio founder"
                 fill
                 className="object-cover"
@@ -142,7 +142,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/maria.jpg"
                 alt="Maria Rodriguez"
                 fill
                 className="object-cover object-top"
@@ -235,17 +235,11 @@ export default function AboutPage() {
                 Pilates experience and reflects the laid-back, vibrant spirit of
                 Puerto.
               </p>
-              <Button asChild className="rounded-none">
-                <Link href="/gallery" className="group">
-                  View Our Gallery
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-[200px]">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="/studio.jpg"
                   alt="Studio interior"
                   fill
                   className="object-cover"
@@ -253,7 +247,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-[200px]">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="/studio2.jpg"
                   alt="Reformer equipment"
                   fill
                   className="object-cover"
@@ -261,7 +255,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-[200px]">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="/studio3.jpg"
                   alt="Mat class area"
                   fill
                   className="object-cover"
@@ -269,7 +263,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-[200px]">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="/studio4.jpg"
                   alt="Studio reception"
                   fill
                   className="object-cover"
@@ -288,8 +282,8 @@ export default function AboutPage() {
               Join Our <span className="font-medium italic">Community</span>
             </h2>
             <p className="text-muted-foreground mb-8">
-              We invite you to experience the Estudio Pilates difference for
-              yourself. Whether you're new to Pilates or an experienced
+              We invite you to experience the Talasofilia Pilates difference for
+              yourself. Whether you’re new to Pilates or an experienced
               practitioner, our doors are open to you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
