@@ -35,8 +35,8 @@ export function SiteHeader() {
                 <Link href="/classes" className="text-lg font-medium">
                   Classes
                 </Link>
-                <Link href="/gallery" className="text-lg font-medium">
-                  Gallery
+                <Link href="/pricing" className="text-lg font-medium">
+                  Pricing
                 </Link>
                 <Link href="/contact" className="text-lg font-medium">
                   Contact
