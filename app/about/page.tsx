@@ -1,13 +1,13 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "About Us | Estudio Pilates",
+  title: "About Us | Talasofilia Pilates",
   description:
-    "Learn about our studio's philosophy, history, and the instructor behind Estudio Pilates in Mexico City.",
-}
+    "Learn about our studio's philosophy, history, and the instructor behind Talasofilia Pilates in Puerto Escondido.",
+};
 
 export default function AboutPage() {
   return (
@@ -31,7 +31,8 @@ export default function AboutPage() {
               About <span className="font-medium italic">Us</span>
             </h1>
             <p className="text-lg md:text-xl opacity-90 max-w-xl mx-auto">
-              Our story, our philosophy, and the person who makes Estudio Pilates special.
+              Our story, our philosophy, and the person who makes Talasofilia
+              Pilates special.
             </p>
           </div>
         </div>
@@ -42,28 +43,37 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] md:h-[500px]">
-              <Image src="/placeholder.svg?height=800&width=600" alt="Studio founder" fill className="object-cover" />
+              <Image
+                src="ball2.jpg"
+                alt="Studio founder"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <h2 className="font-serif text-3xl md:text-4xl font-light mb-6">
                 Our <span className="font-medium italic">Story</span>
               </h2>
               <p className="text-muted-foreground mb-6">
-                Estudio Pilates was founded in 2018 by Maria Rodriguez, a certified Pilates instructor with over 15
-                years of experience. After training and teaching in New York and London, Maria returned to her native
-                Mexico City with a vision to create a studio that combined traditional Pilates principles with a modern
-                approach.
+                Talasofilia Pilates was born out of María Laura’s passion for
+                Pilates and her dedication to helping others feel their best.
+                With over five years of experience, María started her journey in
+                Mazatlán before moving to Puerto Escondido with a dream of
+                creating a space that blends the timeless principles of Pilates
+                with a modern, welcoming approach. What started as a small
+                studio with just one reformer has blossomed into a vibrant
+                community of clients who truly believe in the power of mindful
+                movement.
               </p>
               <p className="text-muted-foreground mb-6">
-                What began as a small studio with just two reformers has grown into a thriving community of clients
-                dedicated to the transformative power of mindful movement. Today, Estudio Pilates is recognized as one
-                of the leading boutique Pilates studios in Mexico City, known for its expert instruction, welcoming
-                atmosphere, and commitment to helping clients achieve their wellness goals.
-              </p>
-              <p className="text-muted-foreground">
-                Our studio continues to evolve, but our core mission remains the same: to provide a space where people
-                of all ages and abilities can discover the benefits of Pilates and develop a deeper connection between
-                mind and body.
+                Today, Talasofilia Pilates is proud to be one of the top
+                boutique Pilates studios in Puerto Escondido, known for its
+                expert instruction and warm, inviting atmosphere. Our mission is
+                simple: to offer a space where everyone, no matter their age or
+                ability, can explore the benefits of Pilates and deepen the
+                connection between mind and body. Whether you’re new to Pilates
+                or have been practicing for years, we’re here to support you on
+                your journey to better health and wellness!
               </p>
             </div>
           </div>
@@ -78,34 +88,38 @@ export default function AboutPage() {
               Our <span className="font-medium italic">Philosophy</span>
             </h2>
             <p className="text-muted-foreground mb-8">
-              At Estudio Pilates, we believe that Pilates is more than just exercise—it's a pathway to a balanced,
-              mindful life. Our approach is guided by these core principles:
+              At Talasofilia Pilates, we believe that Pilates is more than just
+              exercise—it's a pathway to a balanced, mindful life. Our approach
+              is guided by these core principles:
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8 text-left">
               <div className="space-y-2">
                 <h3 className="font-medium text-lg">Mindful Movement</h3>
                 <p className="text-sm text-muted-foreground">
-                  We emphasize the connection between mind and body, encouraging awareness of every movement and breath.
+                  We emphasize the connection between mind and body, encouraging
+                  awareness of every movement and breath.
                 </p>
               </div>
               <div className="space-y-2">
                 <h3 className="font-medium text-lg">Personalized Approach</h3>
                 <p className="text-sm text-muted-foreground">
-                  We recognize that every body is unique, and we tailor our instruction to meet individual needs and
-                  goals.
+                  We recognize that every body is unique, and we tailor our
+                  instruction to meet individual needs and goals.
                 </p>
               </div>
               <div className="space-y-2">
                 <h3 className="font-medium text-lg">Quality Over Quantity</h3>
                 <p className="text-sm text-muted-foreground">
-                  We focus on precision and proper form rather than repetition, ensuring safe and effective practice.
+                  We focus on precision and proper form rather than repetition,
+                  ensuring safe and effective practice.
                 </p>
               </div>
               <div className="space-y-2">
                 <h3 className="font-medium text-lg">Continuous Learning</h3>
                 <p className="text-sm text-muted-foreground">
-                  Maria is committed to ongoing education, bringing the latest research and techniques to our studio.
+                  Maria is committed to ongoing education, bringing the latest
+                  research and techniques to our studio.
                 </p>
               </div>
             </div>
@@ -120,7 +134,9 @@ export default function AboutPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-light mb-4">
               Meet <span className="font-medium italic">Maria</span>
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">The passionate instructor behind Estudio Pilates.</p>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              The passionate instructor behind Estudio Pilates.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
@@ -133,47 +149,35 @@ export default function AboutPage() {
               />
             </div>
             <div>
-              <h3 className="font-serif text-2xl font-medium mb-2">Maria Rodriguez</h3>
-              <p className="text-sm text-muted-foreground mb-6">Founder & Lead Instructor</p>
+              <h3 className="font-serif text-2xl font-medium mb-2">
+                Maria Laura Osuna
+              </h3>
+              <p className="text-sm text-muted-foreground mb-6">
+                Founder & Lead Instructor
+              </p>
               <div className="space-y-4 mb-6">
                 <p className="text-muted-foreground">
-                  Maria discovered Pilates during her career as a professional dancer and was immediately drawn to its
-                  precise, mindful approach to movement. After completing her comprehensive certification in New York,
-                  she taught at prestigious studios in the US and UK before returning to Mexico to found Estudio
-                  Pilates.
+                  Maria first experienced Pilates in her hometown of Mazatlán.
+                  After dancing throughout her childhood, she stopped at age 16
+                  and began searching for a new way to stay active—but nothing
+                  resonated with her until she discovered Pilates. She fell in
+                  love with the practice when she started noticing real changes
+                  in her daily life, such as improved flexibility, strength, and
+                  overall well-being. After completing her comprehensive
+                  certification, she started her teaching journey at the very
+                  studio where she had first discovered Pilates.
                 </p>
                 <p className="text-muted-foreground">
-                  Maria believes that Pilates is for everybody and every body. Her teaching style emphasizes proper
-                  alignment, breath, and the mind-body connection, helping clients develop a deeper awareness of their
-                  movement patterns and potential.
+                  Maria believes that Pilates is for everybody and every body.
+                  Her teaching style emphasizes proper alignment, breath, and
+                  the mind-body connection, helping clients develop a deeper
+                  awareness of their movement patterns and potential.
                 </p>
-              </div>
-
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-medium mb-2">Certifications</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground">
-                    <li>Comprehensive Pilates Certification, The Pilates Center of New York</li>
-                    <li>Pre/Postnatal Pilates Specialist</li>
-                    <li>Pilates for Injuries and Pathologies</li>
-                    <li>Bachelor of Fine Arts in Dance, Universidad Nacional Autónoma de México</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-medium mb-2">Specialties</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground">
-                    <li>Athletic conditioning</li>
-                    <li>Dance-specific training</li>
-                    <li>Postural correction</li>
-                    <li>Injury rehabilitation</li>
-                  </ul>
-                </div>
               </div>
 
               <div className="mt-6">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/talasofiliapilates"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
@@ -190,7 +194,14 @@ export default function AboutPage() {
                     strokeLinejoin="round"
                     className="mr-2"
                   >
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <rect
+                      width="20"
+                      height="20"
+                      x="2"
+                      y="2"
+                      rx="5"
+                      ry="5"
+                    ></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                   </svg>
@@ -211,13 +222,18 @@ export default function AboutPage() {
                 Our <span className="font-medium italic">Studio</span>
               </h2>
               <p className="text-muted-foreground mb-6">
-                Located in the heart of Roma Norte, our studio is designed to be a tranquil escape from the bustling
-                city. The space features natural light, minimalist design, and state-of-the-art equipment to create an
-                environment that promotes focus and mindfulness.
+                Located in the heart of Puerto Escondido, our studio is a
+                peaceful sanctuary inspired by the natural beauty of the coast.
+                With abundant natural light, a breathtaking ocean view, and top
+                of the line equipment, the space is designed to support focus,
+                mindfulness, and a deep connection to movement.
               </p>
               <p className="text-muted-foreground mb-8">
-                Our facility includes a main studio for mat classes and four professional-grade reformers. We've
-                carefully curated every aspect of our space to enhance your Pilates experience.
+                Our facility includes a main studio with three
+                professional-grade reformers. Every detail has been thoughtfully
+                curated to create an inviting environment that enhances your
+                Pilates experience and reflects the laid-back, vibrant spirit of
+                Puerto.
               </p>
               <Button asChild className="rounded-none">
                 <Link href="/gallery" className="group">
@@ -244,7 +260,12 @@ export default function AboutPage() {
                 />
               </div>
               <div className="relative h-[200px]">
-                <Image src="/placeholder.svg?height=400&width=300" alt="Mat class area" fill className="object-cover" />
+                <Image
+                  src="/placeholder.svg?height=400&width=300"
+                  alt="Mat class area"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="relative h-[200px]">
                 <Image
@@ -267,14 +288,20 @@ export default function AboutPage() {
               Join Our <span className="font-medium italic">Community</span>
             </h2>
             <p className="text-muted-foreground mb-8">
-              We invite you to experience the Estudio Pilates difference for yourself. Whether you're new to Pilates or
-              an experienced practitioner, our doors are open to you.
+              We invite you to experience the Estudio Pilates difference for
+              yourself. Whether you're new to Pilates or an experienced
+              practitioner, our doors are open to you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="rounded-none px-8">
                 <Link href="/booking">Book a Class</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-none px-8">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="rounded-none px-8"
+              >
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
@@ -282,6 +309,5 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
-
