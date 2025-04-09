@@ -67,7 +67,7 @@ export default function Home() {
                 that strengthens both body and mind.
               </p>
               <p className="text-muted-foreground mb-8">
-                Founded in 2018, our studio has become a sanctuary for those
+                Founded in 2024, our studio has become a sanctuary for those
                 seeking balance, strength, and wellness in their busy lives.
               </p>
               <Button asChild variant="outline" className="rounded-none">
@@ -169,12 +169,10 @@ export default function Home() {
                 Founder & Lead Instructor
               </p>
               <p className="text-muted-foreground mb-6">
-                Maria discovered Pilates during her career as a professional
-                dancer and was immediately drawn to its precise, mindful
-                approach to movement. After completing her comprehensive
-                certification in New York, she taught at prestigious studios in
-                the US and UK before returning to Mexico to found Estudio
-                Pilates.
+                Maria believes that Pilates is for everybody and every body. Her
+                teaching style emphasizes proper alignment, breath, and the
+                mind-body connection, helping clients develop a deeper awareness
+                of their movement patterns and potential.
               </p>
               <Button asChild variant="outline" className="rounded-none">
                 <Link href="/about" className="group">

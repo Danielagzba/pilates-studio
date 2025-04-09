@@ -300,7 +300,7 @@ const pricingFaqs = [
   {
     question: "Do class packages expire?",
     answer:
-      "Yes, all class packages (5, 10, and 20 classes) are valid for 3 months from the date of purchase.",
+      "Yes, all class packages (4, 6, 8, and 12 classes) are valid for 3 months from the date of purchase.",
   },
   {
     question: "Can I share my class package with a friend?",
