@@ -142,7 +142,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] overflow-hidden">
               <Image
-                src="/maria.jpg"
+                src="/"
                 alt="Maria Rodriguez"
                 fill
                 className="object-cover object-top"

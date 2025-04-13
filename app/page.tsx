@@ -155,7 +155,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] overflow-hidden">
               <Image
-                src="/maria.jpg"
+                src="/"
                 alt="Maria Rodriguez"
                 fill
                 className="object-cover object-top"
@@ -202,19 +202,10 @@ export default function Home() {
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-stone-100 p-8 shadow-sm">
                 <div className="flex items-center mb-4">
-                  <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
-                    <Image
-                      src={testimonial.avatar || "/placeholder.svg"}
-                      alt={testimonial.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
+                  <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4"></div>
                   <div>
                     <h4 className="font-medium">{testimonial.name}</h4>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.type}
-                    </p>
+                    <p className="text-sm text-muted-foreground"></p>
                   </div>
                 </div>
                 <p className="italic text-muted-foreground">
@@ -291,24 +282,18 @@ const galleryImages = [
 
 const testimonials = [
   {
-    name: "Elena Torres",
-    type: "Regular Client",
-    avatar: "/placeholder.svg?height=100&width=100",
+    name: "Tiffany Poppa",
     quote:
-      "Estudio Pilates has completely transformed my relationship with exercise. Maria is knowledgeable and attentive, and the studio atmosphere is so welcoming.",
+      "Such a great class! Maria is challenging, but supportive. There's an ocean view and a perfect sea breeze- it's a truly lovely way to experience Pilates.",
   },
   {
-    name: "Javier Morales",
-    type: "Rehabilitation Client",
-    avatar: "/placeholder.svg?height=100&width=100",
+    name: "Eva Freel",
     quote:
-      "After my back injury, I was afraid to exercise again. Maria created a personalized program that helped me regain strength without pain.",
+      "This rooftop Pilates was perfect. The instructor Maria is fluent in Spanish and English, and the classes are well thought out. The view of the ocean makes this the prettiest Pilates studio I’ve ever practiced in.",
   },
   {
-    name: "Lucia Vega",
-    type: "New Client",
-    avatar: "/placeholder.svg?height=100&width=100",
+    name: "Lucy Marriner",
     quote:
-      "As someone new to Pilates, I was nervous about joining a class. Maria made me feel comfortable from day one and I've seen amazing progress.",
+      "I absolutely recommend getting a 4 class pass! Maria is amazing, the space is beautiful and private, and you will get a consistently good workout. You won’t regret it!",
   },
 ];
