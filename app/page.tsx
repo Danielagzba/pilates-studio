@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/pilatesgirl.jpg"
+            src="/"
             alt="Talasofilia studio"
             fill
             className="object-cover opacity-90"
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] md:h-[500px]">
               <Image
-                src="/one.jpg"
+                src="/"
                 alt="Pilates practice"
                 fill
                 className="object-cover"
