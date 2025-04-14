@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/pilatesgirl.jpg"
+            src="/P4130100.png"
             alt="Talasofilia studio"
             fill
             className="object-cover opacity-90"
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] md:h-[500px]">
               <Image
-                src="/one.jpg"
+                src="/P4130005.png"
                 alt="Pilates practice"
                 fill
                 className="object-cover"
@@ -155,15 +155,15 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] overflow-hidden">
               <Image
-                src="/"
-                alt="Maria Rodriguez"
+                src="/P4150144.png"
+                alt="Maria Laura Osuna"
                 fill
                 className="object-cover object-top"
               />
             </div>
             <div>
               <h3 className="font-serif text-2xl font-medium mb-2">
-                Maria Rodriguez
+                Maria Laura Osuna
               </h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Founder & Lead Instructor
@@ -256,7 +256,7 @@ const classes = [
     title: "Morning Flow",
     description:
       "Start your day with energizing Pilates exercises that awaken your body and mind.",
-    image: "/ball.jpg",
+    image: "/P4150054.png",
     time: "7:30 AM",
   },
   {
@@ -264,7 +264,7 @@ const classes = [
     title: "Evening Restore",
     description:
       "Unwind and release tension with restorative movements that promote relaxation and recovery.",
-    image: "/five.png",
+    image: "/P4150066.png",
     time: "6:00 PM",
   },
 ];

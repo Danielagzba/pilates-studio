@@ -24,7 +24,7 @@ export default function PricingPage() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/pricing.jpg"
+            src="/P4130010.png"
             alt="Pilates studio"
             fill
             className="object-cover opacity-90"

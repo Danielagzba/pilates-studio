@@ -16,7 +16,7 @@ export default function AboutPage() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/beach.jpg"
+            src="/P4130016.png"
             alt="Pilates studio"
             fill
             className="object-cover opacity-90"
@@ -44,7 +44,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] md:h-[500px]">
               <Image
-                src="mat.jpg"
+                src="P4150046.png"
                 alt="Studio founder"
                 fill
                 className="object-cover"
@@ -142,7 +142,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
             <div className="relative h-[400px] overflow-hidden">
               <Image
-                src="/"
+                src="/P4150144.png"
                 alt="Maria Rodriguez"
                 fill
                 className="object-cover object-top"

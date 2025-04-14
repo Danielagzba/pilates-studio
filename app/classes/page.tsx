@@ -225,7 +225,7 @@ const classes = [
     title: "Morning Flow",
     description:
       "Start your day with energizing Pilates exercises that awaken your body and mind. This class focuses on building core strength, improving posture, and enhancing flexibility through a dynamic sequence of movements that will leave you feeling invigorated and centered.",
-    image: "/ball.jpg",
+    image: "/P4150100.png",
     time: "8:30 AM & 9:30 AM (Monday-Sunday)",
     duration: "60 minutes",
     suitableFor: "All levels",
@@ -236,7 +236,7 @@ const classes = [
     title: "Evening Restore",
     description:
       "Unwind and release tension with restorative movements that promote relaxation and recovery. This gentle yet effective class combines traditional Pilates principles with mindful breathing techniques to help you decompress from your day and prepare your body and mind for restful sleep.",
-    image: "/five.png",
+    image: "/P4150037.png",
     time: "5:00 PM (Monday-Friday)",
     duration: "60 minutes",
     suitableFor: "All levels",
