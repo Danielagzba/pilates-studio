@@ -256,7 +256,7 @@ const classes = [
     title: "Morning Flow",
     description:
       "Start your day with energizing Pilates exercises that awaken your body and mind.",
-    image: "/P4150054.png",
+    image: "/P4150018.png",
     time: "7:30 AM",
   },
   {
