@@ -83,7 +83,7 @@ export function SiteFooter() {
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-stone-400" />
-                <p className="text-sm text-stone-300">++52 667 227 6817 </p>
+                <p className="text-sm text-stone-300">+52 667 227 6817 </p>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-stone-400" />
